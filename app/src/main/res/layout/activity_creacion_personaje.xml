@@ -1,0 +1,221 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/portada"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CreacionPersonaje">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/design_default_color_primary_dark"
+        android:text="@string/puntos_disponibles"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/puntos_disponibles"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:text="@string/_30"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/design_default_color_primary_dark"
+        android:text="@string/atributo"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/design_default_color_primary_dark"
+            android:text="@string/fisicos" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/fuerza" />
+
+                <Button
+                    android:id="@+id/suma_fuerza"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/fuerza_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_2"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_fuerza"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/resistencia" />
+
+                <Button
+                    android:id="@+id/suma_resistencia"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/resistencia_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_2"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_resistencia"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/reflejos" />
+
+                <Button
+                    android:id="@+id/suma_reflejos"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/reflejos_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_2"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_reflejos"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/agilidad" />
+
+                <Button
+                    android:id="@+id/suma_agilidad"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/agilidad_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_2"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_agilidad"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

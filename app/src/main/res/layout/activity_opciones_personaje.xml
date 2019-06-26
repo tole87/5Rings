@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/portada"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".OpcionesPersonaje">
+
+    <Button
+        android:id="@+id/equipo_menu"
+        style="@style/Boton_Menu"
+        android:text="@string/nuevo_personaje"
+        android:onClick="abrirCreacionPersonaje"/>
+
+    <Button
+        android:id="@+id/Partida_rapida"
+        style="@style/Boton_Menu"
+        android:text="@string/lista_personajes" />
+
+</LinearLayout>
