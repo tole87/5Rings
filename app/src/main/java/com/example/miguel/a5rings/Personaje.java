@@ -1,21 +1,31 @@
 package com.example.miguel.a5rings;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Personaje {
 
-    private HashMap<String, Integer> fisico;
+    private Map<String, Integer> fisico = new HashMap<>();
+    private String nombrePersonaje;
 
-    public Personaje(HashMap<String, Integer> fisico) {
-        this.fisico = fisico;
+
+    public Personaje(){
     }
 
-    public HashMap<String, Integer> getFisico() {
+    public String getNombrePersonaje() {
+        return nombrePersonaje;
+    }
+
+    public void setNombrePersonaje(String nombrePersonaje) {
+        this.nombrePersonaje = nombrePersonaje;
+    }
+
+
+    public Map<String, Integer> getFisico() {
         return fisico;
     }
 
-    public void setFisico(HashMap<String, Integer> fisico) {
-        this.fisico = fisico;
+    public void añadirAtributo (String atributo, Integer valorAtributo){
+       this.fisico.put(atributo,valorAtributo);
     }
-
 }

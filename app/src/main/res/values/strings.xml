@@ -106,5 +106,18 @@
     <string name="puntos_disponibles">Puntos Disponibles</string>
     <string name="_0">0</string>
     <string name="_30">30</string>
+    <string name="mentales">Mentales</string>
+    <string name="voluntad">Voluntad</string>
+    <string name="percepci_n">Percepción</string>
+    <string name="inteligencia">Inteligencia</string>
+    <string name="conciencia">Conciencia</string>
+    <string name="otros">Otros</string>
+    <string name="puntos_de_trance">Puntos De Trance</string>
+    <string name="berserker">Berserker</string>
+    <string name="habilidades">Habilidades</string>
+    <string name="cazar">Cazar</string>
+    <string name="tradicion">Tradicion</string>
+    <string name="guardar">Guardar</string>
+    <string name="nombre_personaje">Nombre Personaje.....</string>
 
 </resources>
