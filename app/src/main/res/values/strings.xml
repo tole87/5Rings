@@ -119,5 +119,35 @@
     <string name="tradicion">Tradicion</string>
     <string name="guardar">Guardar</string>
     <string name="nombre_personaje">Nombre Personaje.....</string>
+    <string name="historia">Historia</string>
+    <string name="buscar_ingestigar">Buscar/Ingestigar</string>
+    <string name="manejo_animales">Manejo Animales</string>
+    <string name="bardo">Bardo</string>
+    <string name="defensa_escudo">Defensa/Escudo</string>
+    <string name="arma_1_mano">Arma 1 Mano</string>
+    <string name="armas_2_manos">Armas 2 manos</string>
+    <string name="armas_arcanas">Armas Arcanas</string>
+    <string name="armas_especialista">Armas Especialista</string>
+    <string name="arco">Arco</string>
+    <string name="armas_arrojadizas">Armas Arrojadizas</string>
+    <string name="lucha_combate">Lucha/Combate</string>
+    <string name="comercio">Comercio</string>
+    <string name="falsificar">Falsificar</string>
+    <string name="forjar_armas">Forjar Armas</string>
+    <string name="navegacion">Navegacion</string>
+    <string name="juego">Juego</string>
+    <string name="intimidar">Intimidar</string>
+    <string name="supervivencia">Supervivencia</string>
+    <string name="sigilo">Sigilo</string>
+    <string name="trampas">Trampas</string>
+    <string name="seduccion">Seduccion</string>
+    <string name="venenos">Venenos</string>
+    <string name="seguir_acechar">Seguir/Acechar</string>
+    <string name="conocimiento_arcano">Conoc. Arcano</string>
+    <string name="conocimiento_mundano">Conoc. Mundano</string>
+    <string name="conocimiento_especifico">Conoc. Especifico</string>
+    <string name="batalla">Batalla</string>
+    <string name="mentir">Mentir</string>
+    <string name="equitacion">Equitacion</string>
 
 </resources>

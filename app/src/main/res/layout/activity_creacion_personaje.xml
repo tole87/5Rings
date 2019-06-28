@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,6 +6,10 @@
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".CreacionPersonaje">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <EditText
         android:id="@+id/nombre_personaje"
@@ -584,6 +588,124 @@
                     android:background="@drawable/resta" />
 
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/conocimiento_arcano_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/conocimiento_arcano" />
+
+                <Button
+                    android:id="@+id/suma_conocimiento_arcano"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_conocimiento_arcano"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_conocimiento_arcano"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/conocimiento_mundano_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/conocimiento_mundano"
+                    />
+
+                <Button
+                    android:id="@+id/suma_conocimiento_mundano"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_conocimiento_mundano_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_conocimiento_mundano"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/conocimiento_especifico_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/conocimiento_especifico" />
+
+                <Button
+                    android:id="@+id/suma_conocimiento_especifico"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_conocimiento_especifico_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_conocimiento_especifico"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -624,6 +746,1100 @@
                     android:background="@drawable/resta" />
 
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/historia_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/historia" />
+
+                <Button
+                    android:id="@+id/suma_historia"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_historia_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_historia"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/liderazgo_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="Liderazgo" />
+
+                <Button
+                    android:id="@+id/suma_liderazgo"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_liderazgo_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_liderazgo"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/buscar_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/buscar_ingestigar" />
+
+                <Button
+                    android:id="@+id/suma_buscar"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_buscar_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_buscar"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/animales_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/manejo_animales" />
+
+                <Button
+                    android:id="@+id/suma_animales"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_animales_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_animales"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/bardo_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/bardo" />
+
+                <Button
+                    android:id="@+id/suma_bardo"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_bardo_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_bardo"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/escudo_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/defensa_escudo" />
+
+                <Button
+                    android:id="@+id/suma_escudo"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_escudo_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_escudo"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/una_mano_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/arma_1_mano" />
+
+                <Button
+                    android:id="@+id/suma_una_mano"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_una_mano_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_una_mano"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/dos_mano_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/armas_2_manos" />
+
+                <Button
+                    android:id="@+id/suma_dos_mano"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_dos_mano_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_dos_mano"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/arma_arcana_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/armas_arcanas" />
+
+                <Button
+                    android:id="@+id/suma_arma_arcana"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_arma_arcana_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_arma_arcana"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/arma_especialista_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/armas_especialista" />
+
+                <Button
+                    android:id="@+id/suma_arma_especialista"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_arma_especialista_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_arma_especialista"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/arma_arrojadiza_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/armas_arrojadizas" />
+
+                <Button
+                    android:id="@+id/suma_arma_arrojadiza"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_arma_arrojadiza_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_arma_arrojadiza"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/arco_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/arco" />
+
+                <Button
+                    android:id="@+id/suma_arco"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_arco_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_arco"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/combate_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/lucha_combate" />
+
+                <Button
+                    android:id="@+id/suma_combate"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_combate_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_combate"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/comercio_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/comercio" />
+
+                <Button
+                    android:id="@+id/suma_comercio"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_comercio_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_comercio"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/navegacion_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/navegacion" />
+
+                <Button
+                    android:id="@+id/suma_navegacion"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_navegacion_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_navegacion"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/forjar_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/forjar_armas" />
+
+                <Button
+                    android:id="@+id/suma_forjar"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_forjar_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_forjar"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/juego_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/juego" />
+
+                <Button
+                    android:id="@+id/suma_juego"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_juego_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_juego"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/intimidar_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/intimidar" />
+
+                <Button
+                    android:id="@+id/suma_intimidar"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_intimidar_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_intimidar"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/supervivencia_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/supervivencia" />
+
+                <Button
+                    android:id="@+id/suma_supervivencia"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_supervivencia_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_supervivencia"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/sigilo_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/sigilo" />
+
+                <Button
+                    android:id="@+id/suma_sigilo"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_sigilo_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_sigilo"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/trampas_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/trampas" />
+
+                <Button
+                    android:id="@+id/suma_trampas"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_trampas_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_trampas"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/seduccion_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/seduccion" />
+
+                <Button
+                    android:id="@+id/suma_seduccion"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_seduccion_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_seduccion"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/venenos_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/venenos" />
+
+                <Button
+                    android:id="@+id/suma_venenos"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_venenos_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_venenos"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/seguir_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/seguir_acechar" />
+
+                <Button
+                    android:id="@+id/suma_seguir"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_seguir_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_seguir"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/batalla_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/batalla" />
+
+                <Button
+                    android:id="@+id/suma_batalla"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_batalla_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_batalla"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/mentir_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/mentir" />
+
+                <Button
+                    android:id="@+id/suma_mentir"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_mentir_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_mentir"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/equitacion_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/equitacion" />
+
+                <Button
+                    android:id="@+id/suma_equitacion"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_equitacion_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_equitacion"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:id="@+id/falsificar_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/falsificar" />
+
+                <Button
+                    android:id="@+id/suma_falsificar"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mas" />
+
+                <TextView
+                    android:id="@+id/contador_falsificar_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_primary_dark"
+                    android:text="@string/_0"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/resta_falsificar"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/resta" />
+
+            </LinearLayout>
+
+
 
         </LinearLayout>
         <TextView
@@ -642,6 +1858,7 @@
         android:background="@color/gray"
         android:onClick="botonGuardarPersonaje"
         android:text="@string/guardar" />
+    </LinearLayout>
 
-</LinearLayout>
+</ScrollView>
 
