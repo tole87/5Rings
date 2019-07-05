@@ -1,4 +1,4 @@
-package com.example.miguel.a5rings;
+package com.example.miguel.a5rings.Enums;
 
 public enum Atributo {
     PERCEPCION,

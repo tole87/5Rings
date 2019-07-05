@@ -149,5 +149,7 @@
     <string name="batalla">Batalla</string>
     <string name="mentir">Mentir</string>
     <string name="equitacion">Equitacion</string>
+    <string name="editar">Editar</string>
+    <string name="borrar">Borrar</string>
 
 </resources>

@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CreacionPersonaje"></activity>
-        <activity android:name=".OpcionesPersonaje" />
+        <activity android:name=".Personaje.MostrarPersonaje"></activity>
+        <activity android:name=".Personaje.ListaPersonajesCreados" />
+        <activity android:name=".Personaje.CreacionPersonaje" />
+        <activity android:name=".Personaje.OpcionesPersonaje" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

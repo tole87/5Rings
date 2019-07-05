@@ -1,4 +1,4 @@
-package com.example.miguel.a5rings;
+package com.example.miguel.a5rings.Personaje;
 
 import android.content.Context;
 import android.util.Log;
@@ -63,10 +63,10 @@ public class PersonajeUtilidadesGuardado {
         }
     }
 
-    public static Personaje obtenerPersonajes(String nombreAlineacion){
+    public static Personaje obtenerPersonajesPorNombre(String nombreAlineacion){
         return personajes.get(nombreAlineacion);
     }
-    public static LinkedHashMap<String, Personaje> obtenerAlineaciones(){
+    public static LinkedHashMap<String, Personaje> obtenerPersonajesLista(){
         return personajes;
     }
 }

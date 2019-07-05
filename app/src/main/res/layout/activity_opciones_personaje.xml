@@ -5,7 +5,7 @@
     android:background="@drawable/portada"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".OpcionesPersonaje">
+    tools:context=".Personaje.OpcionesPersonaje">
 
     <Button
         android:id="@+id/equipo_menu"
@@ -16,6 +16,9 @@
     <Button
         android:id="@+id/Partida_rapida"
         style="@style/Boton_Menu"
-        android:text="@string/lista_personajes" />
+        android:text="@string/lista_personajes"
+        android:onClick="abrirListaPersonaje"/>
+
+
 
 </LinearLayout>

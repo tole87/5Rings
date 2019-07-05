@@ -1,4 +1,4 @@
-package com.example.miguel.a5rings;
+package com.example.miguel.a5rings.Personaje;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,13 +7,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import java.util.Map;
+import com.example.miguel.a5rings.MainActivity;
+import com.example.miguel.a5rings.R;
 
 public class CreacionPersonaje extends AppCompatActivity {
 
     TextView puntosDisponiblesTextView;
     Personaje nuevoPersonaje;
-    Map<String, Integer> atributosPersonaje;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -658,39 +658,40 @@ public class CreacionPersonaje extends AppCompatActivity {
         nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.conciencia_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_conciencia_text_view)).getText().toString()));
         nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.trance_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_trance_text_view)).getText().toString()));
         nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.berserker_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_berserker_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.cazar_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_cazar_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.tradicion_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_tradicion_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.historia_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_historia_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.liderazgo_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_liderazgo_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.buscar_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_buscar_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.animales_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_animales_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.bardo_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_bardo_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.escudo_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_escudo_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.una_mano_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_una_mano_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.dos_mano_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_dos_mano_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.arma_arcana_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_arma_arcana_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.arma_especialista_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_arma_especialista_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.arma_arrojadiza_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_arma_arrojadiza_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.arco_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_arco_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.combate_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_combate_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.comercio_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_comercio_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.navegacion_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_navegacion_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.forjar_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_forjar_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.falsificar_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_falsificar_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.juego_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_juego_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.intimidar_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_intimidar_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.supervivencia_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_supervivencia_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.sigilo_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_sigilo_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.trampas_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_trampas_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.seduccion_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_seduccion_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.venenos_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_venenos_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.seguir_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_seguir_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.batalla_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_batalla_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.mentir_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_mentir_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.equitacion_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_equitacion_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.conocimiento_arcano_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_conocimiento_arcano)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.conocimiento_mundano_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_conocimiento_mundano_text_view)).getText().toString()));
-        nuevoPersonaje.añadirAtributo(((TextView) findViewById(R.id.conocimiento_especifico_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_conocimiento_especifico_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.cazar_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_cazar_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.tradicion_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_tradicion_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.historia_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_historia_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.liderazgo_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_liderazgo_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.buscar_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_buscar_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.animales_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_animales_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.bardo_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_bardo_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.escudo_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_escudo_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.una_mano_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_una_mano_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.dos_mano_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_dos_mano_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.arma_arcana_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_arma_arcana_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.arma_especialista_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_arma_especialista_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.arma_arrojadiza_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_arma_arrojadiza_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.arco_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_arco_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.combate_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_combate_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.comercio_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_comercio_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.navegacion_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_navegacion_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.forjar_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_forjar_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.falsificar_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_falsificar_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.juego_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_juego_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.intimidar_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_intimidar_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.supervivencia_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_supervivencia_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.sigilo_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_sigilo_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.trampas_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_trampas_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.seduccion_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_seduccion_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.venenos_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_venenos_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.seguir_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_seguir_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.batalla_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_batalla_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.mentir_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_mentir_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.equitacion_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_equitacion_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.conocimiento_arcano_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_conocimiento_arcano)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.conocimiento_mundano_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_conocimiento_mundano_text_view)).getText().toString()));
+        nuevoPersonaje.añadirHabilidad(((TextView) findViewById(R.id.conocimiento_especifico_text_view)).getText().toString(), Integer.parseInt(((TextView) findViewById(R.id.contador_conocimiento_especifico_text_view)).getText().toString()));
+        nuevoPersonaje.setPuntosRestantes(Integer.parseInt(((TextView) findViewById(R.id.puntos_disponibles)).getText().toString()));
         PersonajeUtilidadesGuardado.guardarPersonaje(nuevoPersonaje, this);
 
         startActivity(new Intent(this, MainActivity.class));
