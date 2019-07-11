@@ -6,4 +6,8 @@
     <item
         android:id="@+id/editar_personaje"
         android:title="@string/editar"/>
+
+    <item
+        android:id="@+id/mostrar_personaje"
+        android:title="@string/mostrar"/>
 </menu>

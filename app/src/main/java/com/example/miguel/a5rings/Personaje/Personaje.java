@@ -38,6 +38,16 @@ public class Personaje {
         return habilidad;
     }
 
+    public Map<String, Integer> getHabilidadPositiva(){
+        Map<String, Integer> habilidadPositiva = new HashMap<>();
+        for (Map.Entry<String, Integer> entry : this.habilidad.entrySet()) {
+            if (entry.getValue()!=0){
+             habilidadPositiva.put(entry.getKey(), entry.getValue());
+            }
+        }
+        return habilidadPositiva;
+    }
+
     public void setNombrePersonaje(String nombrePersonaje) {
         this.nombrePersonaje = nombrePersonaje;
     }
@@ -51,5 +61,8 @@ public class Personaje {
     }
     public Integer obtenerValorAtributo(String atributo){
        return this.atributo.get(atributo);
+    }
+    public Integer obtenerValorHabilidad(String habilidad){
+        return this.habilidad.get(habilidad);
     }
 }

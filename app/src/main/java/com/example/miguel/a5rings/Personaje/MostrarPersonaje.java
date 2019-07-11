@@ -39,7 +39,7 @@ public class MostrarPersonaje extends AppCompatActivity {
         ((TextView) findViewById(R.id.contador_trance_text_view)).setText(String.valueOf(personajeMostrar.obtenerValorAtributo("Puntos De Trance")));
         ((TextView) findViewById(R.id.contador_berserker_text_view)).setText(String.valueOf(personajeMostrar.obtenerValorAtributo("Berserker")));
 
-        MostrarTodasHabilidades itemsAdapter = new MostrarTodasHabilidades( personajeMostrar.getHabilidad());
+        MostrarTodasHabilidades itemsAdapter = new MostrarTodasHabilidades( personajeMostrar.getHabilidadPositiva());
         ListView listView = findViewById(R.id.lista_habilidades_personaje);
 
         listView.setAdapter(itemsAdapter);

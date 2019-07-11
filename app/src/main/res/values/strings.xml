@@ -151,5 +151,7 @@
     <string name="equitacion">Equitacion</string>
     <string name="editar">Editar</string>
     <string name="borrar">Borrar</string>
+    <string name="title_activity_editar_personaje">EditarPersonaje</string>
+    <string name="mostrar">Mostrar</string>
 
 </resources>

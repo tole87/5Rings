@@ -81,9 +81,14 @@ public class MostrarPersonajesCreadosAdapter extends ArrayAdapter<Personaje> {
                         startActivity(getIntent());
                         return true;
                     case R.id.editar_personaje:
-                            Intent intent = new  Intent(getApplicationContext(),MostrarPersonaje.class);
-                            intent.putExtra("personaje",personaje.getNombrePersonaje());
-                            startActivity(intent);
+                            Intent intentEditar = new  Intent(getApplicationContext(),EditarPersonaje.class);
+                            intentEditar.putExtra("personaje",personaje.getNombrePersonaje());
+                            startActivity(intentEditar);
+                        return true;
+                    case R.id.mostrar_personaje:
+                        Intent intentMostrar = new  Intent(getApplicationContext(),MostrarPersonaje.class);
+                        intentMostrar.putExtra("personaje",personaje.getNombrePersonaje());
+                        startActivity(intentMostrar);
                         return true;
                     default:
 
