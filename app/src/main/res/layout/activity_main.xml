@@ -19,4 +19,10 @@
         style="@style/Boton_Menu"
         android:text="@string/campaña" />
 
+    <Button
+        android:id="@+id/tirada_dado"
+        style="@style/Boton_Menu"
+        android:text="@string/tirada_dado"
+        android:onClick="abrirTiradaDado"/>
+
 </LinearLayout>

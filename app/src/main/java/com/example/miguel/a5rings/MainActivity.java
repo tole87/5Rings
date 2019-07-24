@@ -24,4 +24,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    public void abrirTiradaDado(View view) {
+        Intent i = new Intent(this, TiradaDados.class);
+        startActivity(i);
+
+
+    }
 }

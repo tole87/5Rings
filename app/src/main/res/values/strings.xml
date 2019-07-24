@@ -153,5 +153,8 @@
     <string name="borrar">Borrar</string>
     <string name="title_activity_editar_personaje">EditarPersonaje</string>
     <string name="mostrar">Mostrar</string>
+    <string name="tirada_dado">tirada dado</string>
+
+
 
 </resources>
